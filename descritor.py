@@ -1,4 +1,4 @@
-__version__ = '0.0.2'
+__version__ = '0.0.3'
 import sys
 import pandas as pd
 
@@ -7,6 +7,7 @@ class DescritorTabela:
     """
     Construtor
     """
+
     def __init__(self, caminho_arq, sep='\t'):
         self.df = pd.read_csv(caminho_arq, sep=sep)
         self.df.columns = ['Data', 'Temp_Media', 'Temp_Min', 'Temp_Max', 'Precipitacao', 'Final_de_semana',
@@ -25,6 +26,15 @@ class DescritorTabela:
         self.consumo = self.df.Consumo_em_litros
         self.min_int = -sys.maxsize - 1
         self.max_int = sys.maxsize - 1
+
+    def pesquisar_por_data(self):
+        """
+        Função pesquisa data específica que o usuário solicitar.
+        """
+        col_data = self.df['Data']
+        data_especifica = input("Escreva a data:(Ano-Mês-Dia) ")
+        resultado = self.df.loc[col_data == data_especifica]
+        return resultado
 
     def obter_data_temp_max(self):
         """
@@ -121,4 +131,4 @@ class DescritorTabela:
 
 
 dt = DescritorTabela("C:\FrameworkTalitha\Consumo_cerveja2.tsv")
-print(dt.obter_media_consumo())
+print(dt.pesquisar_por_data())
