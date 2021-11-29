@@ -5,4 +5,4 @@ Framework: O código tem como base a classe mãe “DescritorTabela”, sua fun�
 
 Limitações: No nosso framework, tivemos algumas limitações, nos quais cabem eventos específicos iguais em datas diferentes, por exemplo a mesma temperatura máxima em um ou mais dias. Além disso, ainda é necessária uma filtragem melhor entre os métodos da classe em relação ao inteiro conjunto de dados, para trazer uma visão macro entre as informações do Dataframe, através de análises estatísticos por exemplo. Resolvemos esse problema parcialmente com a criação da função “pesquisar_por_data” onde o usuário pode pesquisar uma data específica (no ano de 2015), retornando todos os valores do Dataframe. 
 
- Conclusão: Para utilização do Framework basta digitar em seu python console “pip install descritor-analise-sp".
+Para utilização do Framework basta digitar em seu python console “pip install descritor-analise-sp".
