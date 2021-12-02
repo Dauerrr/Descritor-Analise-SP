@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='descritor_analise_sp',
-    version='0.0.3',
+    version='0.0.4',
 
     url='https://github.com/Dauerrr/Descritor-Analise-SP',
     author='Pedro Dauer',
@@ -11,5 +11,6 @@ setup(
     py_modules=['descritor'],
     install_requires=[
     'pandas',
+    'requests',
 ],
 )
