@@ -149,7 +149,7 @@ class DescritorRemoto(DescritorTabela):
     def __init__(self, url_base_dados=None):
         super().__init__()
         # URL dos dados
-        url_base_dados = "https://raw.githubusercontent.com/Dauerrr/FrameWork-Descritor-Analise-SP/main/dados/consumo_cerveja.tsv" if not url_base_dados else url_base_dados
+        url_base_dados = "https://raw.githubusercontent.com/Dauerrr/FrameworkConsumo/main/dados/consumo_cerveja.tsv" if not url_base_dados else url_base_dados
         conteudo = requests.get(url_base_dados).content
         conteudo_utf8 = io.StringIO(conteudo.decode('utf-8'))
         self.df = pd.read_csv(conteudo_utf8, sep='\t')
