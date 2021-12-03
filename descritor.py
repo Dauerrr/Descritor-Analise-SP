@@ -1,4 +1,4 @@
-__version__ = '0.0.4'
+__version__ = '0.0.1'
 
 import sys
 from datetime import datetime
@@ -13,7 +13,6 @@ class DescritorTabela:
     """
 
     def __init__(self):
-        # self.df = pd.read_csv(caminho_arq, sep=sep)
         self.min_int = -sys.maxsize - 1
         self.max_int = sys.maxsize - 1
 
