@@ -1,10 +1,10 @@
 from setuptools import setup
 
 setup(
-    name='descritor_analise_sp',
-    version='0.0.4',
+    name='FrameWorkConsumo',
+    version='0.0.1',
 
-    url='https://github.com/Dauerrr/Descritor-Analise-SP',
+    url='https://github.com/Dauerrr/FrameworkConsumo',
     author='Pedro Dauer',
     author_email='pedro.dauer2003@gmail.com',
 
