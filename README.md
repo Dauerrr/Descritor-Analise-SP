@@ -1,4 +1,4 @@
-# Descritor-Analise-SP
+# Descritor
 Relevância: o consumo de bebidas alcoólicas é presente na vida de muitas pessoas, e as motivações pelo uso são fatores importantes. Nesse framework, queremos explorar uma motivação indireta, o clima, e como ele influencia as pessoas a consumirem álcool. O código tem como objetivo consultar os dados do Dataframe escolhido para relacionar o consumo com fatores climáticos. 
 
 Framework: O código tem como base a classe mãe “DescritorTabela”, sua função “init” tem pré setado o caminho do Dataframe, a renomeação das colunas, transformação da coluna “Data” em valor “datatime” e transformação das demais colunas em valor numérico. Todas as outras funções tem como objetivo consultar os dados solicitados como (Consumo em litros, temperatura e precipitação) e o dia correspondente do mesmo. 
